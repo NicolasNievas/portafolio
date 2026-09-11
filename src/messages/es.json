@@ -1,0 +1,14 @@
+{
+  "nav": { "experience": "experiencia", "projects": "proyectos", "skills": "skills", "contact": "contacto" },
+  "hero": {
+    "eyebrow": "disponible para trabajar",
+    "title": "Backend Developer & Fullstack",
+    "subtitle": "Desarrollo APIs escalables, arquitecturas robustas e integraciones complejas. Experiencia en sistemas distribuidos y despliegues en producción.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Contacto",
+    "cta_cv": "Descargar CV"
+  },
+  "projects": { "title": "proyectos", "demo": "demo", "code": "código" },
+  "skills": { "title": "stack técnico", "backend": "Backend", "frontend": "Frontend", "tools": "DevOps & Tools" },
+  "contact": { "title": "Trabajemos juntos", "subtitle": "Abierto a oportunidades backend / fullstack" }
+}
