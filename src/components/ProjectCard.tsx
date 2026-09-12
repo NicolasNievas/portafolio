@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         <h3 className="font-serif text-xl">{project.title}</h3>
-        <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="flex gap-3 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
           {project.demo && (
             <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-xs text-neutral-400 hover:text-neutral-900 dark:hover:text-stone-100 font-mono transition-colors">demo ↗</a>
           )}

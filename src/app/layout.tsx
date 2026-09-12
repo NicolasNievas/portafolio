@@ -6,7 +6,7 @@ import { LanguageProvider } from "@/context/LanguageProvider"
 const serif = DM_Serif_Display({ subsets: ["latin"], weight: "400", variable: "--font-serif" })
 const mono = DM_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" })
 
-const siteUrl = "https://your-domain.vercel.app"
+const siteUrl = "https://nicolasnievas.vercel.app"
 
 export const metadata: Metadata = {
   title: "Nicolás Nievas | Backend & Fullstack Developer",
@@ -29,6 +29,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${serif.variable} ${mono.variable} bg-[#EEEAE3] dark:bg-neutral-950 text-neutral-900 dark:text-stone-100 font-mono transition-colors duration-300`}>
+        <script 
+        dangerouslySetInnerHTML={{
+          __html: `(function(){try{var s=localStorage.getItem("theme");var isDark=s?s==="dark":true;if(isDark)document.documentElement.classList.add("dark");}catch(e){}})();`,
+          }}
+        />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

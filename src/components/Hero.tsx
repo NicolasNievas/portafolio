@@ -31,17 +31,17 @@ export default function Hero() {
       </motion.p>
 
       <motion.div initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.55}}
-        className="flex gap-3 mb-16">
+        className="flex flex-col sm:flex-row gap-3 mb-16">
         <a href="#projects"
-          className="text-xs bg-neutral-900 dark:bg-stone-100 text-stone-50 dark:text-neutral-900 px-6 py-3 rounded-lg tracking-widest uppercase hover:opacity-80 transition-opacity font-mono">
+          className="text-xs text-center whitespace-nowrap bg-neutral-900 dark:bg-stone-100 text-stone-50 dark:text-neutral-900 px-6 py-3 rounded-lg tracking-widest uppercase hover:opacity-80 transition-opacity font-mono">
           {t("hero.cta_projects")}
         </a>
         <a href="#contact"
-          className="text-xs border border-neutral-300 dark:border-neutral-700 px-6 py-3 rounded-lg tracking-widest uppercase hover:border-neutral-600 dark:hover:border-neutral-400 transition-colors font-mono">
+          className="text-xs text-center whitespace-nowrap border border-neutral-300 dark:border-neutral-700 px-6 py-3 rounded-lg tracking-widest uppercase hover:border-neutral-600 dark:hover:border-neutral-400 transition-colors font-mono">
           {t("hero.cta_contact")}
         </a>
         <a href={cvHref} download={cvFilename}
-          className="text-xs border border-neutral-300 dark:border-neutral-700 px-6 py-3 rounded-lg tracking-widest uppercase hover:border-neutral-600 dark:hover:border-neutral-400 transition-colors font-mono">
+          className="text-xs text-center whitespace-nowrap border border-neutral-300 dark:border-neutral-700 px-6 py-3 rounded-lg tracking-widest uppercase hover:border-neutral-600 dark:hover:border-neutral-400 transition-colors font-mono">
           ↓ {t("hero.cta_cv")}
         </a>
       </motion.div>

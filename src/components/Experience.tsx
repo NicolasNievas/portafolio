@@ -30,7 +30,7 @@ export default function Experience() {
                 <h3 className="font-serif text-xl mb-0.5">{exp.company}</h3>
                 <p className="text-sm text-neutral-500 font-mono">{exp.role[typedLang]}</p>
               </div>
-              <div className="text-right">
+              <div className="md:text-right">
                 <p className="text-xs font-mono text-neutral-400">{exp.period}</p>
                 <p className="text-xs font-mono text-neutral-300 dark:text-neutral-600">{exp.location}</p>
               </div>
