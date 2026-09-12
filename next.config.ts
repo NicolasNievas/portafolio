@@ -28,6 +28,24 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: securityHeaders,
       },
+      {
+        source: "/cv-es.pdf",
+        headers: [
+          {
+            key: "Content-Disposition",
+            value: 'attachment; filename="CV-Nicolas-Nievas-ES.pdf"',
+          },
+        ],
+      },
+      {
+        source: "/cv-en.pdf",
+        headers: [
+          {
+            key: "Content-Disposition",
+            value: 'attachment; filename="CV-Nicolas-Nievas-EN.pdf"',
+          },
+        ],
+      },
     ];
   },
 };
